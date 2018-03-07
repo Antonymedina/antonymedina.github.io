@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto');
+rojo = #E74C3C
+azul = #3CD7E7
+.htmlcolor
+  border 2px solid #E34C26
+.csscolor
+  border 2px solid #238dce
+.jscolor
+  border 2px solid #f7df1e
+*
+  padding 0
+  margin 0
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  box-sizing border-box
+.wrapper
+  margin 0 auto
+  max-width 980px
+body
+  background-color #fff
+  font-family 'Roboto', Helvetica
+  font-size 16px
+  font-variant small-caps
+
+div.me
+  p
+    color #000
+    font-size 1.8em
+    margin 0 auto
+    text-align center
+    width 80%
+
+    .name
+      font-size 1.45em
+
+div.skill
+  display flex
+  flex-flow column wrap
+
+  h3
+    padding-left 5px
+
+  div.skill-div
+    align-items center
+    display flex
+    flex-flow row nowrap
+    width 80%
+    margin 5px auto
+
+    h3
+      align-items center
+      box-sizing border-box
+      display flex
+      justify-content center
+      height 100%
+      margin 0
+      padding 30px
+      text-align center
+      width 20%
+    p
+      align-items center
+      box-sizing border-box
+      display flex
+      justify-content center
+      height 100%
+      margin 0
+      text-align center
+      width 80%
+
+.colors
+  animation-name colors
+  animation-duration 6s
+  animation-delay 0.5s
+  animation-iteration-count infinite
+
+.div-padding
+  padding-top 20px
+
+h1
+  color rojo
+  font-size 3em
+  margin 0 auto
+  padding 0
+  text-align center
+  width: 80%
+h2
+  padding 5px
+
+header
+  align-items center
+  background-color rojo
+  display flex
+  flex-flow column wrap
+  justify-content center
+
+  img
+    margin 5px 0
+    width 150px
+    border 2px solid rojo
+
+nav
+  background-color rojo
+  display flex
+  margin 0
+  padding 0
+  position sticky
+  position -webkit-sticky
+  position: -moz-sticky;
+  top 0
+
+  ul
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    justify-content space-around
+    list-style none
+    padding 0
+    margin 0
+    width 100%
+
+    li
+      flex-grow 1
+      text-align center
+      &:hover
+        background-color azul
+      a
+        color #000
+        display block
+        font-weight bold
+        letter-spacing 2px
+        padding 10px 0
+        text-decoration none
+
+@keyframes colors
+    0%
+      background-color #E34C26
+    45%
+      background-color #238dce
+    90%
+      background-color #f7df1e
+    100%
+      background-color #E34C26
